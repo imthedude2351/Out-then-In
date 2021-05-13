@@ -10,7 +10,7 @@ export function getCart() {
 // Retrieve an unpaid order for the logged in user
 export function addItemToCart(itemId) {
   // Just send itemId for best security (no pricing)
-  return sendRequest(`${BASE_URL}/cart/items/${itemId}`, 'POST');
+  return sendRequest(`${BASE_URL}/cart/items/${itemId}`);
 }
 
 // Update the item's qty in the cart
@@ -24,4 +24,8 @@ export function setItemQtyInCart(itemId, newQty) {
 export function checkout() {
   // Changing data on the server, so make it a POST request
   return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
+}
+
+export function getAll() {
+  return sendRequest(BASE_URL);
 }
