@@ -1,3 +1,5 @@
+import './MenuListItem.css';
+
 export default function MenuListItem({ menuItem, handleAddToOrder }) {
   return (
     <div className="MenuListItem">
