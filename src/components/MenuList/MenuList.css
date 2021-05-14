@@ -1,9 +1,14 @@
 .MenuList {
-    background-color: var(--tan-1);
-    border: .1vmin solid var(--tan-3);
-    border-radius: 2vmin;
-    margin: 3vmin 0;
-    padding: 3vmin;
-    overflow-y: scroll;
-  }
+  background-color: var(--tan-1);
+  border: .1vmin solid rgb(82, 82, 250);
+  border-radius: 4vmin;
+  margin: 5vmin;
+  padding: 3vmin;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-template-columns: 6vw 6vw 6vw;
+}
   

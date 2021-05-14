@@ -8,6 +8,7 @@ module.exports = {
   setItemQtyInCart,
   checkout,
   index,
+  delete: deleteOrder,
 };
 
 async function cart(req, res) {
@@ -50,5 +51,10 @@ async function checkout(req, res) {
 
 async function index(req, res) {
   const orders = await Order.getOrders(req.user._id);
+  res.json(orders);
+}
+
+async function deleteOrder(req, res) {
+  const orders = await Order.findByIdAndDelete(req.params.id);
   res.json(orders);
 }

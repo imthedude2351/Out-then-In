@@ -1,10 +1,13 @@
 .OrderDetail {
     flex-direction: column;
+    /* display: grid; */
     justify-content: flex-start;
     align-items: center;
     padding: 3vmin;
     font-size: 2vmin;
     color: var(--text-light);
+    height: 100vmin;
+    margin-bottom: 100px;
   }
   
   .OrderDetail .section-heading {
@@ -41,7 +44,7 @@
   }
   
   .OrderDetail .hungry {
-    position: absolute;
+    /* position: absolute; */
     top: 50vh;
     font-size: 2vmin;
   }

@@ -3,7 +3,6 @@ import * as itemsAPI from '../../utilities/items-api';
 import * as ordersAPI from '../../utilities/orders-api';
 import './NewOrderPage.css';
 import { Link, useHistory } from 'react-router-dom';
-// import Logo from '../../components/Logo/Logo';
 import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
@@ -66,15 +65,17 @@ export default function NewOrderPage({ user, setUser }) {
         <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
-      <MenuList
-        menuItems={menuItems.filter(item => item.category.name === activeCat)}
-        handleAddToOrder={handleAddToOrder}
-      />
-      <OrderDetail
-        order={cart}
-        handleChangeQty={handleChangeQty}
-        handleCheckout={handleCheckout}
-      />
+      <div>
+        <MenuList
+          menuItems={menuItems.filter(item => item.category.name === activeCat)}
+          handleAddToOrder={handleAddToOrder}
+        />
+      </div>
+        <OrderDetail
+          order={cart}
+          handleChangeQty={handleChangeQty}
+          handleCheckout={handleCheckout}
+        />
     </main>
   );
 }

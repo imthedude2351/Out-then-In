@@ -13,4 +13,6 @@ router.put('/cart/qty', ordersCtrl.setItemQtyInCart);
 
 router.get('/', ordersCtrl.index);
 
+router.delete('/:id', ordersCtrl.delete);
+
 module.exports = router;

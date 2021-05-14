@@ -3,6 +3,7 @@ require('./config/database');
 
 const Category = require('./models/category');
 const Item = require('./models/item');
+// const Location = require('./models/location');
 
 (async function() {
 
@@ -46,8 +47,8 @@ const Item = require('./models/item');
 
   ]);  
 
-  // await Item.deleteMany({});
-  // const items = await Item.create([
+  // await Location.deleteMany({});
+  // const locations = await Location.create([
     // Locations 
     // {address: '1210 N. Atlantic Blvd.', city: 'Alhambra', state: 'CA', area: 'LA', region: 'SoCal', latitude:, longitude:,},
     // {address: '420 N. Santa Anita Ave.', city: 'Arcadia', state: 'CA', area: 'LA', region: 'SoCal', latitude:, longitude:,},

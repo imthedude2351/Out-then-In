@@ -1,16 +1,19 @@
 .NewOrderPage {
-    height: 100%;
-    display: grid;
+    max-height: 500vmin;
+    /* display: grid; */
+    /* display: flex; */
     grid-template-columns: 1.6fr 3.5fr 3fr;
     grid-template-rows: 1fr;
     background-color: var(--white);
-    border-radius: 2vmin;
+    border-radius: 7vmin;
+    margin: 5vmin;
   }
   
-  .NewOrderPage aside {
+   .NewOrderPage aside {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
-    margin: 3vmin 2vmin;
-  }
+    margin: 3vmin 7vmin;
+  } 
+  

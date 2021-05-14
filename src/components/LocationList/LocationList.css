@@ -1,0 +1,8 @@
+.LocationList {
+    background-color: var(--tan-1);
+    border: .1vmin solid rgb(82, 82, 250);
+    border-radius: 2vmin;
+    margin: 3vmin 0;
+    padding: 3vmin;
+    overflow-y: scroll;
+  }

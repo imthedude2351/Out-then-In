@@ -1,9 +1,9 @@
 // import OrderDetail from "../OrderDetail/OrderDetail";
 import OrderListItem from "../OrderListItems/OrderListItems";
-// import './OrderList.css';
+import './OrderList.css';
 
 
-export default function OrderList({ orders, setActiveOrder, activeOrder}) {
+export default function OrderList({ orders, setActiveOrder, activeOrder, deleteOrder}) {
 
   return(
     <div className="OrderList">
@@ -16,6 +16,7 @@ export default function OrderList({ orders, setActiveOrder, activeOrder}) {
       setActiveOrder={setActiveOrder}
       activeOrder={activeOrder}
       order={order}
+      deleteOrder={deleteOrder}
       />)}
     </div>
   );

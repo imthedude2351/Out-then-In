@@ -7,11 +7,14 @@ import UserLogOut from '../../components/UserLogOut/UserLogOut';
 import OrderList from '../../components/OrderList/OrderList';
 import { useState, useEffect } from 'react';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
+import { useHistory } from 'react-router-dom';
 
 
 export default function OrderHistoryPage({ user, setUser }) {
   const [orders, setOrders] = useState([]);
   const [activeOrder, setActiveOrder] = useState(null);
+
+  const history = useHistory();
 
   useEffect(function() {
     async function getOrders() {
@@ -22,17 +25,27 @@ export default function OrderHistoryPage({ user, setUser }) {
     getOrders();
   }, []);
 
+  async function deleteOrder(id) {
+    await ordersAPI.deleteOrder(id);
+    const updatedOrders = await ordersAPI.getAll();
+    setOrders(updatedOrders);
+    setActiveOrder(null);
+  }
+
 
   return (
     <main className="OrderHistoryPage">
       <aside>
         {/* <NavBar user={user} set={setUser}/> */}
         <Link to="/orders/new" className="button btn-sm">NEW ORDER</Link>
+        <br/>
+        <br/>
+        <br/>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       
       <div>
-        <OrderList orders={orders} setActiveOrder={setActiveOrder} activeOrder={activeOrder} />
+        <OrderList orders={orders} setActiveOrder={setActiveOrder} activeOrder={activeOrder} deleteOrder={deleteOrder} />
       </div>
       <div>
         <OrderDetail order={activeOrder} />

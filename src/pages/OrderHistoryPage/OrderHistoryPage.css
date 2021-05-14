@@ -4,13 +4,18 @@
     grid-template-columns: 1.6fr 3.5fr 3fr;
     grid-template-rows: 1fr;
     background-color: var(--white);
-    border-radius: 2vmin;
+    border-radius: 7vmin;
   }
   
   .OrderHistoryPage aside {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 3vmin 2vmin;
+    margin: 4vmin 2vmin;
   }
+  
+  .OrderHistoryPage div {
+    overflow-y: scroll;
+  }
+    

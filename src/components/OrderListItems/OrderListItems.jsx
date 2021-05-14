@@ -1,7 +1,8 @@
 // import OrderDetail from '../OrderDetail/OrderDetail';
+import { deleteOrder } from "../../utilities/orders-api";
 import "./OrderListItems.css";
 
-export default function OrderListItem({ id, date, qty, total, setActiveOrder, order, activeOrder }) {
+export default function OrderListItem({ id, date, qty, total, setActiveOrder, order, activeOrder, deleteOrder }) {
   date = date.slice(0, 10).split('-');
   let month = date[2];
   let year = date[0];
@@ -15,6 +16,7 @@ export default function OrderListItem({ id, date, qty, total, setActiveOrder, or
       <div className="RightColumn">
       <h4>${total}</h4>
       <p>{qty} items</p>
+      <button onClick={() => deleteOrder(order._id)}>Delete Order</button>
       </div>
     </div>
   );
