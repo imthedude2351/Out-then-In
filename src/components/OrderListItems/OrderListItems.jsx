@@ -15,7 +15,7 @@ export default function OrderListItem({ id, date, qty, total, setActiveOrder, or
       <div className="RightColumn">
       <h4>${total}</h4>
       <p>{qty} items</p>
-      <button onClick={() => deleteOrder(order._id)}>Delete Order</button>
+      <button onClick={() => deleteOrder(order._id)}>Picked Up Order</button>
       </div>
     </div>
   );
