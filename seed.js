@@ -17,33 +17,33 @@ const Item = require('./models/item');
   await Item.deleteMany({});
   const items = await Item.create([
     // Drinks 
-    {name: 'Napoleon Shake', category: categories[0], price: 0.00 },
-    {name: 'Chocolate', category: categories[0], price: 0.00},
-    {name: 'Vanilla', category: categories[0], price: 0.00},
-    {name: 'Strawberry', category: categories[0], price: 0.00},
-    {name: 'Pop', category: categories[0], price: 0.00},
-    {name: 'Light Pop', category: categories[0], price: 0.00},
-    {name: 'The Doctor', category: categories[0], price: 0.00},
-    {name: 'Beer Root', category: categories[0], price: 0.00},
-    {name: 'Diet Pop', category: categories[0], price: 0.00},
-    {name: "Texas' Drink", category: categories[0], price: 0.00},
-    {name: 'Yellow Lemon', category: categories[0], price: 0.00},
-    {name: 'Strawberry Lemonade', category: categories[0], price: 0.00},
-    {name: 'Hot Chocolate', category: categories[0], price: 0.00},
-    {name: 'Coffee', category: categories[0], price: 0.00}, 
+    {name: 'Napoleon Shake', category: categories[0], price: 2.50},
+    {name: 'Chocolate Shake', category: categories[0], price: 2.50},
+    {name: 'Vanilla Shake', category: categories[0], price: 2.50},
+    {name: 'Strawberry Shake', category: categories[0], price: 2.50},
+    {name: 'Pop', category: categories[0], price: 1.75},
+    {name: 'Light Pop', category: categories[0], price: 1.75},
+    {name: 'The Doctor', category: categories[0], price: 1.75},
+    {name: 'Beer Root', category: categories[0], price: 1.75},
+    {name: 'Diet Pop', category: categories[0], price: 1.75},
+    {name: "Texas' Drink", category: categories[0], price: 1.75},
+    {name: 'Yellow Lemon', category: categories[0], price: 1.75},
+    {name: 'Strawberry Lemonade', category: categories[0], price: 1.75},
+    {name: 'Hot Chocolate', category: categories[0], price: 1.75},
+    {name: 'Coffee', category: categories[0], price: 1.25}, 
 
     // Fries
-    {name: 'Papas Fritas', category: categories[1], price: 0.00},
-    {name: 'Fries with Chz', category: categories[1], price: 0.00},
-    {name: 'Road Kill Fries', category: categories[1], price: 0.00}, 
+    {name: 'Papas Fritas', category: categories[1], price: 1.95},
+    {name: 'Fries with Chz', category: categories[1], price: 4.20},
+    {name: 'Road Kill Fries', category: categories[1], price: 4.20}, 
 
     // Burgers
-    {name: '2 meat 2 chz', category: categories[2], price: 0.00},
-    {name: '1 meat 1 chz', category: categories[2], price: 0.00},
-    {name: '1 meat', category: categories[2], price: 0.00},
-    {name: '3 meat 3 chz', category: categories[2], price: 0.00},
-    {name: '4 meat 4 chz', category: categories[2], price: 0.00},
-    {name: '2 meat 1 chz', category: categories[2], price: 0.00},
+    {name: '2 meat 2 chz', category: categories[2], price: 4.19},
+    {name: '1 meat 1 chz', category: categories[2], price: 2.95},
+    {name: '1 meat', category: categories[2], price: 2.65},
+    {name: '3 meat 3 chz', category: categories[2], price: 4.84},
+    {name: '4 meat 4 chz', category: categories[2], price: 5.50},
+    {name: '2 meat 1 chz', category: categories[2], price: 3.57},
 
   ]);  
 

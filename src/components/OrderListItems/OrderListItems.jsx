@@ -1,5 +1,4 @@
 // import OrderDetail from '../OrderDetail/OrderDetail';
-import { deleteOrder } from "../../utilities/orders-api";
 import "./OrderListItems.css";
 
 export default function OrderListItem({ id, date, qty, total, setActiveOrder, order, activeOrder, deleteOrder }) {

@@ -7,14 +7,12 @@ import UserLogOut from '../../components/UserLogOut/UserLogOut';
 import OrderList from '../../components/OrderList/OrderList';
 import { useState, useEffect } from 'react';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
-import { useHistory } from 'react-router-dom';
 
 
 export default function OrderHistoryPage({ user, setUser }) {
   const [orders, setOrders] = useState([]);
   const [activeOrder, setActiveOrder] = useState(null);
 
-  const history = useHistory();
 
   useEffect(function() {
     async function getOrders() {
