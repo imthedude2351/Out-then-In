@@ -24,7 +24,7 @@ Mongoose, Express, React, Node
 Below is a link to my app. 
 
 ### [Click here to launch the app!](https://out-then-in.herokuapp.com//)
-##### [Click here to view our project planning Trello Board.](https://trello.com/b/ZQhadnLL/out-then-in)
+##### [Click here to view the project planning Trello Board.](https://trello.com/b/ZQhadnLL/out-then-in)
 
 
 ### Next Steps
